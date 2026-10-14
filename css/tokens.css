@@ -1,0 +1,41 @@
+/* ===========================================================
+   Design tokens — single source of truth for the portfolio site.
+   Source: Figma "Component" page (node 25:948)
+   =========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&display=swap');
+@import url('../fonts/fonts.css');
+
+:root {
+  /* Color palette */
+  --color-dark: #282828;
+  --color-grey: #6c6c6c;
+  --color-white: #ffffff;
+  --color-dirt: #f8f3ec;
+  --color-space: #856eff;
+  --color-sky: #5db2ff;
+  --color-grass: #2bbf5c;
+  --color-barb: #ffb6c4;
+  --color-dandelion: #ffe459;
+  --color-pop: #ff5e55;
+
+  /* Typography */
+  --font-heading: 'Work Sans', sans-serif;
+  --font-accent: 'ES Rebond Grotesque', sans-serif;
+
+  /* Radii */
+  --radius-card: 32px;
+  --radius-pill: 56px;
+  --radius-badge: 36.788px;
+  --radius-image: 8px;
+
+  /* Shadows */
+  --shadow-nav: 0px 4px 6px rgba(0, 0, 0, 0.04);
+  --shadow-fab: 2px 4px 6px rgba(0, 0, 0, 0.18);
+  --shadow-card: 2px 4px 9px rgba(0, 0, 0, 0.12);
+
+  /* Motion */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 160ms;
+  --duration-base: 240ms;
+}

@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About — Hannah Allard</title>
 <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/components.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
 <style>
@@ -18,10 +19,10 @@
 
   <nav class="flex h-[120px] items-center justify-center w-full px-[80px]">
     <div class="bg-white flex gap-[4px] items-center p-[4px] rounded-[56px] shadow-[0px_4px_6px_rgba(0,0,0,0.04)]">
-      <a href="index.html" class="bg-white flex items-center justify-center px-[24px] py-[12px] rounded-[56px] w-[92px] font-['Work_Sans'] font-semibold text-[16px] leading-[20px] text-[#282828]">Home</a>
-      <a href="about.html" class="bg-[#f8f3ec] flex items-center justify-center px-[24px] py-[12px] rounded-[56px] w-[92px] font-['Work_Sans'] font-semibold text-[16px] leading-[20px] text-[#856eff]">About</a>
-      <a href="work.html" class="bg-white flex items-center justify-center px-[24px] py-[12px] rounded-[56px] w-[92px] font-['Work_Sans'] font-semibold text-[16px] leading-[20px] text-[#282828]">Work</a>
-      <a href="contact.html" class="bg-white flex items-center justify-center px-[24px] py-[12px] rounded-[56px] w-[92px] font-['Work_Sans'] font-semibold text-[16px] leading-[20px] text-[#282828]">Contact</a>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link is-active">About</a>
+      <a href="work.html" class="nav-link">Work</a>
+      <a href="contact.html" class="nav-link">Contact</a>
     </div>
   </nav>
 
@@ -61,7 +62,7 @@
               <img src="images/about/linkedin-article-thumb.png" class="absolute inset-0 object-cover rounded-[8px] size-full" alt="">
             </div>
             <div class="bg-[#f8f3ec] flex gap-[4px] items-end justify-center px-[16px] py-[12px] rounded-[56px] w-full">
-              <a class="font-['Work_Sans'] font-semibold text-[#282828] text-[16px] underline cursor-pointer leading-[20px]" href="https://www.linkedin.com/pulse/epic-quest-holy-design-system-hannah-allard-bd19e" target="_blank">Read the article</a>
+              <a class="font-['Work_Sans'] font-semibold text-[#282828] text-[16px] underline cursor-pointer leading-[20px] transition-opacity duration-150 hover:opacity-60" href="https://www.linkedin.com/pulse/epic-quest-holy-design-system-hannah-allard-bd19e" target="_blank">Read the article</a>
             </div>
           </div>
           <div class="bg-white flex flex-col items-center p-[24px] rounded-[32px] w-full">
@@ -88,7 +89,7 @@
           </div>
           <div class="bg-[#ffb6c4] flex flex-col items-center p-[24px] rounded-[32px] w-full">
             <div class="bg-[#f8f3ec] flex gap-[4px] items-end justify-center px-[16px] py-[12px] rounded-[56px] w-full">
-              <a class="font-['Work_Sans'] font-semibold text-[#282828] text-[16px] underline cursor-pointer leading-[20px]" href="https://ablaze-tempo-f57.notion.site/My-professional-journey-249c9279c58a806a8431c95563e43b66?source=copy_link" target="_blank">Check out my resume</a>
+              <a class="font-['Work_Sans'] font-semibold text-[#282828] text-[16px] underline cursor-pointer leading-[20px] transition-opacity duration-150 hover:opacity-60" href="https://ablaze-tempo-f57.notion.site/My-professional-journey-249c9279c58a806a8431c95563e43b66?source=copy_link" target="_blank">Check out my resume</a>
             </div>
           </div>
           <div class="bg-white flex flex-col gap-[16px] items-center p-[24px] rounded-[32px] w-full">

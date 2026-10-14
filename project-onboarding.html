@@ -5,7 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Onboarding — Hannah Allard</title>
 <script src="https://cdn.tailwindcss.com/3.4.16"></script>
-<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/components.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
 <style>
@@ -18,10 +19,10 @@
 
   <nav class="flex h-[120px] items-center justify-center w-full px-[80px]">
     <div class="bg-white flex gap-[4px] items-center p-[4px] rounded-[56px] shadow-[0px_4px_6px_rgba(0,0,0,0.04)]">
-      <a href="index.html" class="bg-white flex items-center justify-center px-[24px] py-[12px] rounded-[56px] w-[92px] font-['Work_Sans'] font-semibold text-[16px] leading-[20px] text-[#282828]">Home</a>
-      <a href="about.html" class="bg-white flex items-center justify-center px-[24px] py-[12px] rounded-[56px] w-[92px] font-['Work_Sans'] font-semibold text-[16px] leading-[20px] text-[#282828]">About</a>
-      <a href="work.html" class="bg-[#f8f3ec] flex items-center justify-center px-[24px] py-[12px] rounded-[56px] w-[92px] font-['Work_Sans'] font-semibold text-[16px] leading-[20px] text-[#856eff]">Work</a>
-      <a href="contact.html" class="bg-white flex items-center justify-center px-[24px] py-[12px] rounded-[56px] w-[92px] font-['Work_Sans'] font-semibold text-[16px] leading-[20px] text-[#282828]">Contact</a>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="work.html" class="nav-link is-active">Work</a>
+      <a href="contact.html" class="nav-link">Contact</a>
     </div>
   </nav>
 
@@ -106,43 +107,63 @@
           </div>
           <div class="flex flex-col gap-[16px] items-start w-full">
             <div class="flex gap-[16px] items-start w-full flex-wrap">
-              <button class="bg-[#ffe459] flex flex-col items-start p-[24px] rounded-[32px] flex-1 min-w-[200px] text-left">
-                <div class="flex items-start justify-between w-full">
-                  <div class="flex gap-[12px] items-end text-[#282828]"><p class="font-['Work_Sans'] font-medium leading-[14px] text-[12px]">01</p><p class="font-['Work_Sans'] font-semibold leading-[16px] text-[14px]">Initial contact</p></div>
-                  <img src="images/project-onboarding/chevron-down.svg" class="size-[16px]" alt="">
+              <button class="accordion flex-1 min-w-[200px]" aria-expanded="false">
+                <div class="accordion__header">
+                  <div class="accordion__title-group"><span class="accordion__step">01</span><span class="accordion__title">Initial contact</span></div>
+                  <img src="images/icons/chevron-down.svg" class="accordion__chevron" alt="">
                 </div>
+                <div class="accordion__body"><div class="accordion__body-inner">
+                  <p>Merchants land on the Fintecture website and complete a contact form. If their annual turnover is under &euro;1M, they receive an automated introduction email with a link to create their account.</p>
+                </div></div>
               </button>
-              <button class="bg-[#ffe459] flex flex-col items-start p-[24px] rounded-[32px] flex-1 min-w-[200px] text-left">
-                <div class="flex items-start justify-between w-full">
-                  <div class="flex gap-[12px] items-end text-[#282828]"><p class="font-['Work_Sans'] font-medium leading-[14px] text-[12px]">02</p><p class="font-['Work_Sans'] font-semibold leading-[16px] text-[14px]">Account creation</p></div>
-                  <img src="images/project-onboarding/chevron-down.svg" class="size-[16px]" alt="">
+              <button class="accordion flex-1 min-w-[200px]" aria-expanded="false">
+                <div class="accordion__header">
+                  <div class="accordion__title-group"><span class="accordion__step">02</span><span class="accordion__title">Account creation</span></div>
+                  <img src="images/icons/chevron-down.svg" class="accordion__chevron" alt="">
                 </div>
+                <div class="accordion__body"><div class="accordion__body-inner">
+                  <p>The merchant completes the sign-up form to register.</p>
+                </div></div>
               </button>
-              <button class="bg-[#ffe459] flex flex-col items-start p-[24px] rounded-[32px] flex-1 min-w-[200px] text-left">
-                <div class="flex items-start justify-between w-full">
-                  <div class="flex gap-[12px] items-end text-[#282828]"><p class="font-['Work_Sans'] font-medium leading-[14px] text-[12px]">03</p><p class="font-['Work_Sans'] font-semibold leading-[16px] text-[14px]">Onboarding initiation</p></div>
-                  <img src="images/project-onboarding/chevron-down.svg" class="size-[16px]" alt="">
+              <button class="accordion flex-1 min-w-[200px]" aria-expanded="false">
+                <div class="accordion__header">
+                  <div class="accordion__title-group"><span class="accordion__step">03</span><span class="accordion__title">Onboarding initiation</span></div>
+                  <img src="images/icons/chevron-down.svg" class="accordion__chevron" alt="">
                 </div>
+                <div class="accordion__body"><div class="accordion__body-inner">
+                  <p>Once logged in, the merchant starts the onboarding process by clicking the &ldquo;Activate my account&rdquo; button from the homepage card in the Console.</p>
+                </div></div>
               </button>
             </div>
             <div class="flex gap-[16px] items-start w-full flex-wrap">
-              <button class="bg-[#ffe459] flex flex-col items-start p-[24px] rounded-[32px] flex-1 min-w-[200px] text-left">
-                <div class="flex items-start justify-between w-full">
-                  <div class="flex gap-[12px] items-end text-[#282828]"><p class="font-['Work_Sans'] font-medium leading-[14px] text-[12px]">04</p><p class="font-['Work_Sans'] font-semibold leading-[16px] text-[14px]">KYB submission</p></div>
-                  <img src="images/project-onboarding/chevron-down.svg" class="size-[16px]" alt="">
+              <button class="accordion flex-1 min-w-[200px]" aria-expanded="false">
+                <div class="accordion__header">
+                  <div class="accordion__title-group"><span class="accordion__step">04</span><span class="accordion__title">KYB submission</span></div>
+                  <img src="images/icons/chevron-down.svg" class="accordion__chevron" alt="">
                 </div>
+                <div class="accordion__body"><div class="accordion__body-inner">
+                  <p>Merchants fill out required fields for KYB:</p>
+                  <ul><li>Company details</li><li>Legal representative information</li><li>Legal documents</li><li>Bank account documentation</li></ul>
+                </div></div>
               </button>
-              <button class="bg-[#ffe459] flex flex-col items-start p-[24px] rounded-[32px] flex-1 min-w-[200px] text-left">
-                <div class="flex items-start justify-between w-full">
-                  <div class="flex gap-[12px] items-end text-[#282828]"><p class="font-['Work_Sans'] font-medium leading-[14px] text-[12px]">05</p><p class="font-['Work_Sans'] font-semibold leading-[16px] text-[14px]">Manual compliance review</p></div>
-                  <img src="images/project-onboarding/chevron-down.svg" class="size-[16px]" alt="">
+              <button class="accordion flex-1 min-w-[200px]" aria-expanded="false">
+                <div class="accordion__header">
+                  <div class="accordion__title-group"><span class="accordion__step">05</span><span class="accordion__title">Manual compliance review</span></div>
+                  <img src="images/icons/chevron-down.svg" class="accordion__chevron" alt="">
                 </div>
+                <div class="accordion__body"><div class="accordion__body-inner">
+                  <p>After submission, the account enters a pending verification state. Our compliance team manually reviews all provided documents before approving the account.</p>
+                </div></div>
               </button>
-              <button class="bg-[#ffe459] flex flex-col items-start p-[24px] rounded-[32px] flex-1 min-w-[200px] text-left">
-                <div class="flex items-start justify-between w-full">
-                  <div class="flex gap-[12px] items-end text-[#282828]"><p class="font-['Work_Sans'] font-medium leading-[14px] text-[12px]">06</p><p class="font-['Work_Sans'] font-semibold leading-[16px] text-[14px]">Technical setup</p></div>
-                  <img src="images/project-onboarding/chevron-down.svg" class="size-[16px]" alt="">
+              <button class="accordion flex-1 min-w-[200px]" aria-expanded="false">
+                <div class="accordion__header">
+                  <div class="accordion__title-group"><span class="accordion__step">06</span><span class="accordion__title">Technical setup</span></div>
+                  <img src="images/icons/chevron-down.svg" class="accordion__chevron" alt="">
                 </div>
+                <div class="accordion__body"><div class="accordion__body-inner">
+                  <p>Upon approval, merchants must create an application within the Console &mdash; either:</p>
+                  <ul><li>A basic application for generating payment links and collecting payments, or</li><li>An integrated application linked to their CMS.</li><li>For CMS integrations, merchants must also install the Fintecture plugin on their CMS, introducing an additional technical step.</li></ul>
+                </div></div>
               </button>
             </div>
           </div>
@@ -315,5 +336,6 @@
     <img src="images/project-onboarding/chevron-up.svg" class="size-[32px]" alt="Back to top">
   </button>
 </div>
+<script src="js/accordion.js"></script>
 </body>
 </html>
