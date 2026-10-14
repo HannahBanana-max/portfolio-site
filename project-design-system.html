@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Design System — Hannah Allard</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+  body { background:#f8f3ec; font-family:'Work Sans', sans-serif; }
+  a { text-decoration: none; }
+  .ul-check li::marker { color:#282828; }
+</style>
+</head>
+<body>
+<div class="relative w-[1280px] max-w-full mx-auto bg-[#f8f3ec]">
+
+  <nav class="flex h-[120px] items-center justify-center w-full px-[80px]">
+    <div class="bg-white flex gap-[4px] items-center p-[4px] rounded-[56px] shadow-[0px_4px_6px_rgba(0,0,0,0.04)]">
+      <a href="index.html" class="bg-white flex items-center justify-center px-[24px] py-[12px] rounded-[56px] w-[92px] font-['Work_Sans'] font-semibold text-[16px] leading-[20px] text-[#282828]">Home</a>
+      <a href="about.html" class="bg-white flex items-center justify-center px-[24px] py-[12px] rounded-[56px] w-[92px] font-['Work_Sans'] font-semibold text-[16px] leading-[20px] text-[#282828]">About</a>
+      <a href="work.html" class="bg-[#f8f3ec] flex items-center justify-center px-[24px] py-[12px] rounded-[56px] w-[92px] font-['Work_Sans'] font-semibold text-[16px] leading-[20px] text-[#856eff]">Work</a>
+      <a href="contact.html" class="bg-white flex items-center justify-center px-[24px] py-[12px] rounded-[56px] w-[92px] font-['Work_Sans'] font-semibold text-[16px] leading-[20px] text-[#282828]">Contact</a>
+    </div>
+  </nav>
+
+  <main class="w-[930px] max-w-[calc(100%-48px)] mx-auto pt-[46px] pb-[80px] flex flex-col gap-[100px]">
+
+    <!-- Header -->
+    <div class="flex flex-col gap-[16px] items-start w-full">
+      <div class="relative flex flex-col h-[400px] items-end justify-center p-[24px] rounded-[32px] w-full overflow-hidden">
+        <img src="images/project-ds/hero-card.png" class="absolute inset-0 object-cover size-full" alt="">
+        <div class="relative flex flex-col gap-[12px] items-start w-[379px] max-w-full">
+          <div class="flex flex-col gap-[8px] items-start text-white w-full">
+            <p class="font-['Work_Sans'] font-medium leading-[20px] text-[16px]">Fintecture</p>
+            <p class="font-['ES_Rebond_Grotesque'] font-semibold leading-[48px] text-[40px] w-full">Design System</p>
+          </div>
+          <div class="flex gap-[8px] items-start flex-wrap">
+            <span class="bg-[#f8f3ec] flex items-center justify-center px-[12px] py-[8px] rounded-[36.788px] font-['ES_Rebond_Grotesque'] font-medium text-[#282828] text-[12px] whitespace-nowrap">Scalable</span>
+            <span class="bg-[#f8f3ec] flex items-center justify-center px-[12px] py-[8px] rounded-[36.788px] font-['ES_Rebond_Grotesque'] font-medium text-[#282828] text-[12px] whitespace-nowrap">Collaborative</span>
+            <span class="bg-[#f8f3ec] flex items-center justify-center px-[12px] py-[8px] rounded-[36.788px] font-['ES_Rebond_Grotesque'] font-medium text-[#282828] text-[12px] whitespace-nowrap">User-centric</span>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white flex items-start justify-between p-[24px] rounded-[32px] w-full text-[#282828] text-[14px] flex-wrap gap-6">
+        <div class="flex flex-col gap-[8px] items-start leading-[16px]">
+          <p class="font-['Work_Sans'] font-semibold">My role</p>
+          <p class="font-['Work_Sans'] font-normal">Product Designer &amp; Project Lead</p>
+        </div>
+        <div class="flex flex-col gap-[8px] items-start">
+          <p class="font-['Work_Sans'] font-semibold leading-[16px]">Tools</p>
+          <div class="font-['Work_Sans'] font-normal leading-[17px]">
+            <p>Figma</p><p>Angular library</p><p>Notion</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-[8px] items-start leading-[16px]">
+          <p class="font-['Work_Sans'] font-semibold">Timeline</p>
+          <div class="flex flex-col font-['Work_Sans'] font-normal gap-[2px] items-start">
+            <p>15 months</p>
+            <p>From June 2022 to September 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-[52px] items-start w-full">
+
+      <!-- Context and problem -->
+      <div class="bg-white flex flex-col gap-[40px] items-start p-[24px] rounded-[32px] w-full">
+        <div class="flex flex-col gap-[12px] items-start w-full">
+          <p class="font-['Work_Sans'] font-semibold leading-[34px] text-[#282828] text-[28px]">Context</p>
+          <p class="font-['Work_Sans'] font-normal leading-[20px] text-[#282828] text-[16px] w-full">When I launched this project in 2022, Fintecture didn&rsquo;t have a Design System yet. Each designer and developer had their own way of doing things, which made collaboration less smooth and sometimes led to inconsistent interfaces. The result: significant time loss and growing design and technical debt.</p>
+          <p class="font-['Work_Sans'] font-normal leading-[20px] text-[#282828] text-[16px] w-full">As a Product Designer, I saw an opportunity: to create a Design System with a clear vision &mdash; structure our foundations, facilitate collaboration between teams, strengthen visual identity, and most importantly, make product creation more fluid and scalable.</p>
+          <p class="font-['Work_Sans'] font-normal leading-[20px] text-[#282828] text-[16px] w-full">The goal: <span class="font-medium">design, document, and implement a scalable Design System</span>, aligned with the brand identity, to improve productivity, quality, and user experience.</p>
+        </div>
+        <div class="flex flex-col gap-[12px] items-start w-full">
+          <p class="font-['Work_Sans'] font-semibold leading-[34px] text-[#282828] text-[28px]">Problem</p>
+          <p class="font-['Work_Sans'] font-normal leading-[20px] text-[#282828] text-[16px] w-full">Before the Design System, here&rsquo;s what we were experiencing on a daily basis:</p>
+          <ul class="list-disc font-['Work_Sans'] font-normal text-[#282828] text-[16px] w-full pl-[24px] flex flex-col gap-[2px]">
+            <li class="leading-[20px]">Designers <span class="font-medium">spent too much time</span> searching for or recreating already existing components.</li>
+            <li class="leading-[20px]">Developers <span class="font-medium">often rewrote the same elements</span>, <span class="font-medium">increasing the risk of bugs and slowing down delivery</span>.</li>
+            <li class="leading-[20px]">The interface <span class="font-medium">lacked uniformity and clarity</span>, making it harder for users to navigate.</li>
+            <li class="leading-[20px]">The product <span class="font-medium">wasn&rsquo;t scalable</span>, and <span class="font-medium">cross-team collaboration</span> (especially between squads) was <span class="font-medium">inefficient</span>.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Goals -->
+      <div class="bg-white flex flex-col gap-[20px] items-start p-[24px] rounded-[32px] w-full">
+        <p class="font-['Work_Sans'] font-semibold leading-[34px] text-[#282828] text-[28px]">Goals</p>
+        <div class="flex flex-wrap gap-[16px] items-start w-full">
+          <div class="bg-[#5db2ff] flex flex-col items-start px-[24px] py-[20px] rounded-[32px]"><p class="font-['Work_Sans'] font-semibold leading-[16px] text-[#282828] text-[14px] whitespace-nowrap">&#128200; +25% productivity in product &amp; tech teams</p></div>
+          <div class="bg-[#5db2ff] flex flex-col items-start px-[24px] py-[20px] rounded-[32px]"><p class="font-['Work_Sans'] font-semibold leading-[16px] text-[#282828] text-[14px]">&#9989; Reduce design and code errors</p></div>
+          <div class="bg-[#5db2ff] flex flex-col items-start px-[24px] py-[20px] rounded-[32px]"><p class="font-['Work_Sans'] font-semibold leading-[16px] text-[#282828] text-[14px]">&#9201; Shorten QA time</p></div>
+          <div class="bg-[#5db2ff] flex flex-col items-start px-[24px] py-[20px] rounded-[32px]"><p class="font-['Work_Sans'] font-semibold leading-[16px] text-[#282828] text-[14px]">&#127912; Improve visual consistency and user experience</p></div>
+          <div class="bg-[#5db2ff] flex flex-col items-start px-[24px] py-[20px] rounded-[32px]"><p class="font-['Work_Sans'] font-semibold leading-[16px] text-[#282828] text-[14px]">&#129521; Reduce technical and design debt</p></div>
+        </div>
+      </div>
+
+      <!-- Process -->
+      <div class="bg-white flex flex-col gap-[32px] items-start p-[24px] rounded-[32px] w-full">
+        <div class="flex flex-col gap-[20px] items-start w-full">
+          <p class="font-['Work_Sans'] font-semibold leading-[34px] text-[#282828] text-[28px]">Process</p>
+          <div class="flex flex-col gap-[16px] items-start w-full">
+            <div class="flex gap-[16px] items-start w-full flex-wrap">
+              <div class="bg-[#ffe459] flex flex-col gap-[12px] items-start p-[24px] rounded-[32px] flex-1 min-w-[180px]">
+                <p class="font-['Work_Sans'] font-medium leading-[14px] text-[#282828] text-[12px]">01</p>
+                <div class="flex flex-col gap-[4px] items-start w-full">
+                  <p class="font-['Work_Sans'] italic font-normal leading-[14px] text-[#5db2ff] text-[12px]">June 2022</p>
+                  <p class="font-['Work_Sans'] font-semibold leading-[16px] text-[#282828] text-[14px]">Creating the foundations in Figma</p>
+                </div>
+              </div>
+              <div class="bg-[#ffe459] flex flex-col gap-[12px] items-start p-[24px] rounded-[32px] flex-1 min-w-[180px]">
+                <p class="font-['Work_Sans'] font-medium leading-[14px] text-[#282828] text-[12px]">02</p>
+                <div class="flex flex-col gap-[4px] items-start w-full">
+                  <p class="font-['Work_Sans'] italic font-normal leading-[14px] text-[#5db2ff] text-[12px]">June 2022</p>
+                  <p class="font-['Work_Sans'] font-semibold leading-[16px] text-[#282828] text-[14px]">Implementation method</p>
+                </div>
+              </div>
+              <div class="bg-[#ffe459] flex flex-col gap-[12px] items-start p-[24px] rounded-[32px] flex-1 min-w-[180px]">
+                <p class="font-['Work_Sans'] font-medium leading-[14px] text-[#282828] text-[12px]">03</p>
+                <div class="flex flex-col gap-[4px] items-start w-full">
+                  <p class="font-['Work_Sans'] italic font-normal leading-[14px] text-[#5db2ff] text-[12px]">July 2022</p>
+                  <p class="font-['Work_Sans'] font-semibold leading-[16px] text-[#282828] text-[14px]">Pitching to stakeholders</p>
+                </div>
+              </div>
+              <div class="bg-[#ffe459] flex flex-col gap-[12px] items-start p-[24px] rounded-[32px] flex-1 min-w-[180px]">
+                <p class="font-['Work_Sans'] font-medium leading-[14px] text-[#282828] text-[12px]">04</p>
+                <div class="flex flex-col gap-[4px] items-start w-full">
+                  <p class="font-['Work_Sans'] italic font-normal leading-[14px] text-[#5db2ff] text-[12px]">July 2022</p>
+                  <p class="font-['Work_Sans'] font-semibold leading-[16px] text-[#282828] text-[14px]">Integration into Angular Library</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-[16px] items-start w-full flex-wrap">
+              <div class="bg-[#ffe459] flex flex-col gap-[12px] items-start p-[24px] rounded-[32px] flex-1 min-w-[180px]">
+                <p class="font-['Work_Sans'] font-medium leading-[14px] text-[#282828] text-[12px]">05</p>
+                <div class="flex flex-col gap-[4px] items-start w-full">
+                  <p class="font-['Work_Sans'] italic font-normal leading-[14px] text-[#5db2ff] text-[12px]">July 2022</p>
+                  <p class="font-['Work_Sans'] font-semibold leading-[16px] text-[#282828] text-[14px]">Setting up a systematic QA process</p>
+                </div>
+              </div>
+              <div class="bg-[#ffe459] flex flex-col gap-[12px] items-start p-[24px] rounded-[32px] flex-1 min-w-[180px]">
+                <p class="font-['Work_Sans'] font-medium leading-[14px] text-[#282828] text-[12px]">06</p>
+                <div class="flex flex-col gap-[4px] items-start w-full">
+                  <p class="font-['Work_Sans'] italic font-normal leading-[14px] text-[#5db2ff] text-[12px]">Jan-Oct 2023</p>
+                  <p class="font-['Work_Sans'] font-semibold leading-[16px] text-[#282828] text-[14px]">Implementation of the DS in the Console</p>
+                </div>
+              </div>
+              <div class="bg-[#ffe459] flex flex-col gap-[12px] items-start p-[24px] rounded-[32px] flex-1 min-w-[180px]">
+                <p class="font-['Work_Sans'] font-medium leading-[14px] text-[#282828] text-[12px]">07</p>
+                <div class="flex flex-col gap-[4px] items-start w-full">
+                  <p class="font-['Work_Sans'] italic font-normal leading-[14px] text-[#5db2ff] text-[12px]">Aug-Sep 2023</p>
+                  <p class="font-['Work_Sans'] font-semibold leading-[16px] text-[#282828] text-[14px]">Implementation of the DS in the Console</p>
+                </div>
+              </div>
+              <div class="bg-[#ffe459] flex flex-col gap-[12px] items-start p-[24px] rounded-[32px] flex-1 min-w-[180px]">
+                <p class="font-['Work_Sans'] font-medium leading-[14px] text-[#282828] text-[12px]">08</p>
+                <div class="flex flex-col gap-[4px] items-start w-full">
+                  <p class="font-['Work_Sans'] italic font-normal leading-[14px] text-[#5db2ff] text-[12px]">September 2023</p>
+                  <p class="font-['Work_Sans'] font-semibold leading-[16px] text-[#282828] text-[14px]">Design System governance</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#ffe459] flex flex-col items-center px-[24px] py-[16px] rounded-[32px] w-full">
+              <p class="font-['Work_Sans'] font-semibold leading-[16px] text-[#282828] text-[14px]">Documentation</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-[16px] items-start w-full flex-wrap">
+          <div class="bg-[#f8f3ec] flex-1 min-w-[260px] flex flex-col items-start p-[24px] rounded-[32px]">
+            <img src="images/project-ds/process-shot1.png" class="rounded-[8px] w-full object-cover" alt="">
+          </div>
+          <div class="bg-[#f8f3ec] flex-1 min-w-[260px] flex flex-col items-start justify-center p-[24px] rounded-[32px] self-stretch">
+            <img src="images/project-ds/process-shot2.png" class="rounded-[8px] w-full object-cover" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- Solution -->
+      <div class="bg-white flex flex-col gap-[32px] items-center p-[24px] rounded-[32px] w-full">
+        <div class="flex flex-col gap-[12px] items-start w-full">
+          <p class="font-['Work_Sans'] font-semibold leading-[34px] text-[#282828] text-[28px]">Solution</p>
+          <ul class="list-disc font-['Work_Sans'] font-normal text-[#282828] text-[16px] w-full pl-[24px] flex flex-col gap-[2px]">
+            <li class="leading-[20px]">A complete <span class="font-medium">Design System in Figma</span>, developed in an Angular library</li>
+            <li class="leading-[20px]">A <span class="font-medium">clear collaboration</span> framework between designers and developers</li>
+            <li class="leading-[20px]">Integrated <span class="font-medium">QA processes</span> within the component lifecycle</li>
+            <li class="leading-[20px]">A <span class="font-medium">shared documentation space</span>, accessible to all product/tech teams</li>
+          </ul>
+        </div>
+        <div class="flex gap-[16px] items-stretch justify-center w-full flex-wrap">
+          <div class="bg-[#f8f3ec] flex-1 min-w-[260px] flex flex-col items-center justify-center p-[24px] rounded-[32px]">
+            <img src="images/project-ds/solution-frame89.png" class="object-cover" alt="">
+          </div>
+          <div class="bg-[#f8f3ec] flex-1 min-w-[260px] flex flex-col items-start p-[24px] rounded-[32px]">
+            <img src="images/project-ds/solution-breadcrumb.png" class="rounded-[8px] w-full object-cover" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div class="bg-white flex flex-col gap-[32px] items-center p-[24px] rounded-[32px] w-full">
+        <div class="flex flex-col gap-[20px] items-start w-full">
+          <div class="flex flex-col gap-[12px] items-start w-full">
+            <p class="font-['Work_Sans'] font-semibold leading-[34px] text-[#282828] text-[28px]">Results</p>
+            <p class="font-['Work_Sans'] font-normal leading-[20px] text-[#282828] text-[16px] w-full">To measure the actual impact of the Design System, we ran an <span class="font-medium">internal survey with developers</span>. Here&rsquo;s what came out:</p>
+          </div>
+          <div class="flex gap-[16px] items-stretch justify-center w-full flex-wrap text-[#282828]">
+            <div class="bg-[#2bbf5c] flex-1 min-w-[200px] flex flex-col gap-[8px] items-start justify-end pb-[20px] pt-[40px] px-[24px] rounded-[32px]">
+              <p class="font-['Work_Sans'] font-semibold leading-[24px] text-[20px]">90%</p>
+              <p class="font-['Work_Sans'] font-normal leading-[16px] text-[14px]">of developers said the Design System saved them time and increased their velocity when working on front-end interfaces</p>
+            </div>
+            <div class="bg-[#2bbf5c] flex-1 min-w-[200px] flex flex-col gap-[8px] items-start justify-end pb-[20px] pt-[40px] px-[24px] rounded-[32px]">
+              <p class="font-['Work_Sans'] font-semibold leading-[24px] text-[20px]">95%</p>
+              <p class="font-['Work_Sans'] font-normal leading-[16px] text-[14px]">found it easy to create or modify components in the Angular library</p>
+            </div>
+            <div class="bg-[#2bbf5c] flex-1 min-w-[200px] flex flex-col gap-[8px] items-start justify-end pb-[20px] pt-[40px] px-[24px] rounded-[32px]">
+              <p class="font-['Work_Sans'] font-semibold leading-[24px] text-[20px]">100%</p>
+              <p class="font-['Work_Sans'] font-normal leading-[16px] text-[14px]">agreed it improved code quality and made communication between team members easier than ever before</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-[20px] items-start w-full">
+          <p class="font-['Work_Sans'] font-normal leading-[20px] text-[#282828] text-[16px] w-full">On the <span class="font-medium">product and organizational side</span>:</p>
+          <div class="flex flex-col gap-[16px] items-start w-full">
+            <div class="flex gap-[16px] items-stretch justify-center w-full flex-wrap text-[#282828]">
+              <div class="bg-[#2bbf5c] flex-1 min-w-[200px] flex flex-col gap-[8px] items-start justify-end pb-[20px] pt-[40px] px-[24px] rounded-[32px]">
+                <p class="font-['Work_Sans'] font-semibold leading-[24px] text-[20px]">90%</p>
+                <p class="font-['Work_Sans'] font-normal leading-[16px] text-[14px]">of the Console is built on Angular Design System components</p>
+              </div>
+              <div class="bg-[#2bbf5c] flex-1 min-w-[200px] flex flex-col gap-[8px] items-start justify-end pb-[20px] pt-[40px] px-[24px] rounded-[32px]">
+                <p class="font-['Work_Sans'] font-semibold leading-[24px] text-[20px]">70%</p>
+                <p class="font-['Work_Sans'] font-normal leading-[16px] text-[14px]">of Connect is also covered</p>
+              </div>
+              <div class="bg-[#2bbf5c] flex-1 min-w-[200px] flex flex-col gap-[8px] items-start justify-end pb-[20px] pt-[40px] px-[24px] rounded-[32px]">
+                <p class="font-['Work_Sans'] font-semibold leading-[24px] text-[20px]">100%</p>
+                <p class="font-['Work_Sans'] font-normal leading-[16px] text-[14px]">of the interface (Console &amp; Connect) is aligned with the Design System</p>
+              </div>
+            </div>
+            <div class="flex gap-[16px] items-stretch justify-center w-full flex-wrap text-[#282828]">
+              <div class="bg-[#2bbf5c] flex-1 min-w-[200px] flex flex-col items-start justify-center px-[24px] py-[20px] rounded-[32px]"><p class="font-['Work_Sans'] font-normal leading-[16px] text-[14px]">Significant time savings in production</p></div>
+              <div class="bg-[#2bbf5c] flex-1 min-w-[200px] flex flex-col items-start justify-center px-[24px] py-[20px] rounded-[32px]"><p class="font-['Work_Sans'] font-normal leading-[16px] text-[14px]">Better interface consistency and reliability</p></div>
+              <div class="bg-[#2bbf5c] flex-1 min-w-[200px] flex flex-col items-start justify-center px-[24px] py-[20px] rounded-[32px]"><p class="font-['Work_Sans'] font-normal leading-[16px] text-[14px]">Reduced QA time and fewer production errors</p></div>
+              <div class="bg-[#2bbf5c] flex-1 min-w-[200px] flex flex-col items-start justify-center px-[24px] py-[20px] rounded-[32px]"><p class="font-['Work_Sans'] font-normal leading-[16px] text-[14px]">Stronger collaboration between designers and developers</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-[20px] items-start w-full">
+          <p class="font-['Work_Sans'] font-normal leading-[20px] text-[#282828] text-[16px] w-full">On the <span class="font-medium">user experience side</span>, there was a clear improvement:</p>
+          <div class="flex gap-[16px] items-stretch w-full flex-wrap text-[#282828]">
+            <div class="bg-[#2bbf5c] flex-1 min-w-[200px] flex flex-col items-start justify-center px-[24px] py-[20px] rounded-[32px]"><p class="font-['Work_Sans'] font-normal leading-[16px] text-[14px]">The interfaces became more user-friendly and responsive</p></div>
+            <div class="bg-[#2bbf5c] flex-1 min-w-[200px] flex flex-col items-start justify-center px-[24px] py-[20px] rounded-[32px]"><p class="font-['Work_Sans'] font-normal leading-[16px] text-[14px]">The unified components brought a sense of visual and functional consistency</p></div>
+            <div class="bg-[#2bbf5c] flex-1 min-w-[200px] flex flex-col items-start justify-center px-[24px] py-[20px] rounded-[32px]"><p class="font-['Work_Sans'] font-normal leading-[16px] text-[14px]">The navigation became more intuitive and interactions more seamless.</p></div>
+            <div class="bg-[#2bbf5c] flex-1 min-w-[200px] flex flex-col items-start justify-center px-[24px] py-[20px] rounded-[32px]"><p class="font-['Work_Sans'] font-normal leading-[16px] text-[14px]">Users encountered a coherent, polished experience that reinforced trust</p></div>
+          </div>
+        </div>
+
+        <div class="bg-[#f8f3ec] flex flex-col items-start p-[24px] rounded-[32px] w-full">
+          <img src="images/project-ds/results-chart.png" class="rounded-[8px] w-full object-cover" alt="">
+        </div>
+      </div>
+
+      <!-- What I learned -->
+      <div class="bg-white flex flex-col gap-[32px] items-start p-[24px] rounded-[32px] w-full">
+        <div class="flex flex-col gap-[12px] items-start w-full">
+          <p class="font-['Work_Sans'] font-semibold leading-[34px] text-[#282828] text-[28px]">What I learned</p>
+          <ul class="list-disc font-['Work_Sans'] font-normal text-[#282828] text-[16px] w-full pl-[24px] flex flex-col gap-[2px]">
+            <li class="leading-[20px]"><span class="font-medium">A Design System is alive</span>: it evolves, reinvents itself, and adapts.</li>
+            <li class="leading-[20px]">It&rsquo;s important to strike a <span class="font-medium">balance between rigor and flexibility</span> to let teams innovate without breaking consistency.</li>
+            <li class="leading-[20px]">Every product has its own needs: <span class="font-medium">a good Design System knows how to adapt</span>.</li>
+            <li class="leading-[20px]">Most importantly, <span class="font-medium">communication is key</span>: support the change, train teams, and foster a product culture built around quality and collaboration.</li>
+          </ul>
+        </div>
+        <div class="bg-white border-[3px] border-[#856eff] flex items-end justify-between p-[24px] rounded-[32px] w-full flex-wrap gap-4">
+          <div class="flex flex-col gap-[8px] items-start w-[613px] max-w-full">
+            <div class="flex gap-[2px] items-start">
+              <img src="images/project-ds/lightbulb.svg" class="size-[20px]" alt="">
+              <p class="font-['Work_Sans'] font-semibold leading-[20px] text-[#282828] text-[16px]">Want to learn more?</p>
+            </div>
+            <p class="font-['Work_Sans'] font-normal leading-[16px] text-[#282828] text-[14px]">I documented the entire journey in a detailed article covering the challenges, solutions, and key insights from implementing Design Systems in a corporate environment.</p>
+          </div>
+          <a href="https://www.linkedin.com/pulse/epic-quest-holy-design-system-hannah-allard-bd19e" target="_blank" class="bg-[#f8f3ec] flex gap-[4px] items-center justify-center px-[16px] py-[12px] rounded-[56px]">
+            <span class="font-['Work_Sans'] font-semibold text-[#282828] text-[16px] underline">Read my article</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Explore more -->
+    <div class="flex flex-col gap-[28px] items-start w-full">
+      <div class="flex gap-[4px] h-[34px] items-start">
+        <p class="font-['Work_Sans'] font-semibold leading-[34px] text-[#282828] text-[28px]">Explore additional projects</p>
+        <img src="images/project-ds/star.svg" class="size-[25.332px]" alt="">
+      </div>
+      <div class="flex gap-[16px] items-start w-full flex-wrap">
+        <a href="project-onboarding.html" class="relative flex flex-col h-[226px] items-start justify-between p-[24px] rounded-[32px] flex-1 min-w-[260px] overflow-hidden cursor-pointer">
+          <img src="images/project-ds/card-onboarding.png" class="absolute inset-0 object-cover size-full" alt="">
+          <div class="relative flex flex-col gap-[6px] items-start text-[#f8f3ec]">
+            <p class="font-['Work_Sans'] font-medium leading-[20px] text-[16px]">Fintecture</p>
+            <p class="font-['ES_Rebond_Grotesque'] font-semibold leading-[38px] text-[32px]">Onboarding</p>
+          </div>
+          <div class="relative bg-[#f8f3ec] flex items-center justify-center px-[16px] py-[12px] rounded-[56px]">
+            <img src="images/project-ds/arrow.svg" class="size-[20px]" alt="">
+          </div>
+        </a>
+        <div class="relative flex flex-col h-[226px] items-start justify-between p-[24px] rounded-[32px] flex-1 min-w-[260px] overflow-hidden">
+          <img src="images/project-ds/card-dashboard.png" class="absolute inset-0 object-cover size-full" alt="">
+          <div class="relative flex flex-col gap-[6px] items-start text-[#f8f3ec]">
+            <p class="font-['Work_Sans'] font-medium leading-[20px] text-[16px]">Fintecture</p>
+            <p class="font-['ES_Rebond_Grotesque'] font-semibold leading-[38px] text-[32px]">Dashboard</p>
+          </div>
+          <div class="relative bg-[#6c6c6c] flex gap-[4px] items-center justify-center px-[16px] py-[12px] rounded-[56px]">
+            <span class="font-['Work_Sans'] font-semibold text-[#f8f3ec] text-[16px]">Soon</span>
+            <img src="images/project-ds/lock-outline.svg" class="size-[20px]" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <button onclick="window.scrollTo({top:0,behavior:'smooth'})" class="fixed bg-white shadow-[2px_4px_6px_rgba(0,0,0,0.18)] flex items-center justify-center p-[10px] rounded-[56px] bottom-[40px] right-[calc(8.33%+25px)]">
+    <img src="images/project-ds/chevron-up.svg" class="size-[32px]" alt="Back to top">
+  </button>
+</div>
+</body>
+</html>

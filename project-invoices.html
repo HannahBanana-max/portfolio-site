@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invoices — Hannah Allard</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@600&display=swap" rel="stylesheet">
+<style>
+  body { background:#f8f3ec; font-family:'Work Sans', sans-serif; }
+  a { text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="relative w-[1280px] max-w-full mx-auto bg-[#f8f3ec]">
+
+  <nav class="flex h-[120px] items-center justify-center w-full px-[80px]">
+    <div class="bg-white flex gap-[4px] items-center p-[4px] rounded-[56px] shadow-[0px_4px_6px_rgba(0,0,0,0.04)]">
+      <a href="index.html" class="bg-white flex items-center justify-center px-[24px] py-[12px] rounded-[56px] w-[92px] font-['Work_Sans'] font-semibold text-[16px] leading-[20px] text-[#282828]">Home</a>
+      <a href="about.html" class="bg-white flex items-center justify-center px-[24px] py-[12px] rounded-[56px] w-[92px] font-['Work_Sans'] font-semibold text-[16px] leading-[20px] text-[#282828]">About</a>
+      <a href="work.html" class="bg-[#f8f3ec] flex items-center justify-center px-[24px] py-[12px] rounded-[56px] w-[92px] font-['Work_Sans'] font-semibold text-[16px] leading-[20px] text-[#856eff]">Work</a>
+      <a href="contact.html" class="bg-white flex items-center justify-center px-[24px] py-[12px] rounded-[56px] w-[92px] font-['Work_Sans'] font-semibold text-[16px] leading-[20px] text-[#282828]">Contact</a>
+    </div>
+  </nav>
+
+  <main class="w-[930px] max-w-[calc(100%-48px)] mx-auto pt-[46px] pb-[80px] flex flex-col gap-[16px]">
+    <div class="relative flex flex-col h-[400px] items-start p-[24px] rounded-[32px] w-full overflow-hidden">
+      <img src="images/project-invoices/hero-card.png" class="absolute left-0 w-full max-w-none" style="height:290.63%; top:-147.81%;" alt="">
+      <div class="relative flex flex-col gap-[12px] items-start w-[379px] max-w-full">
+        <div class="flex flex-col gap-[8px] items-start text-white w-full">
+          <p class="font-['Work_Sans'] font-medium leading-[20px] text-[16px]">Fintecture</p>
+          <p class="font-['ES_Rebond_Grotesque'] font-semibold leading-[48px] text-[40px] w-full">Invoices</p>
+        </div>
+        <div class="flex gap-[8px] items-start">
+          <span class="bg-[#f8f3ec] flex items-center justify-center px-[12px] py-[8px] rounded-[36.788px] font-['ES_Rebond_Grotesque'] font-medium text-[#282828] text-[12px]">-</span>
+          <span class="bg-[#f8f3ec] flex items-center justify-center px-[12px] py-[8px] rounded-[36.788px] font-['ES_Rebond_Grotesque'] font-medium text-[#282828] text-[12px]">-</span>
+          <span class="bg-[#f8f3ec] flex items-center justify-center px-[12px] py-[8px] rounded-[36.788px] font-['ES_Rebond_Grotesque'] font-medium text-[#282828] text-[12px]">-</span>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white flex items-start justify-between p-[24px] rounded-[32px] w-full text-[#282828] text-[14px] flex-wrap gap-6">
+      <div class="flex flex-col gap-[8px] items-start leading-[16px]">
+        <p class="font-['Work_Sans'] font-semibold">My role</p>
+        <p class="font-['Work_Sans'] font-normal">Product Designer</p>
+      </div>
+      <div class="flex flex-col gap-[8px] items-start">
+        <p class="font-['Work_Sans'] font-semibold leading-[16px]">Tools</p>
+        <div class="font-['Work_Sans'] font-normal leading-[17px]"><p>Figma</p><p>Notion</p></div>
+      </div>
+      <div class="flex flex-col gap-[8px] items-start leading-[16px]">
+        <p class="font-['Work_Sans'] font-semibold">Timeline</p>
+        <div class="flex flex-col font-['Work_Sans'] font-normal gap-[2px] items-start">
+          <p>2 months</p><p>From April to May 2025</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <button onclick="window.scrollTo({top:0,behavior:'smooth'})" class="fixed bg-white shadow-[2px_4px_6px_rgba(0,0,0,0.18)] flex items-center justify-center p-[10px] rounded-[56px] bottom-[40px] right-[calc(8.33%+25px)]">
+    <img src="images/project-invoices/chevron-up.svg" class="size-[32px]" alt="Back to top">
+  </button>
+</div>
+</body>
+</html>

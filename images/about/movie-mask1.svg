@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="9.89011" height="10.7692" viewBox="0 0 9.89011 10.7692" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Mask group">
+<mask id="mask0_0_310" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="10" height="11">
+<g id="Group">
+<path id="Vector" d="M9.89011 0H0V10.7692H9.89011V0Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_0_310)">
+<path id="Vector_2" d="M4.55243 10.6593C7.50035 10.6593 9.89012 8.27317 9.89012 5.32967C9.89012 2.38617 7.50035 0 4.55243 0C1.6045 0 -0.78527 2.38617 -0.78527 5.32967C-0.78527 8.27317 1.6045 10.6593 4.55243 10.6593Z" fill="#40BCF4"/>
+</g>
+</g>
+</svg>
