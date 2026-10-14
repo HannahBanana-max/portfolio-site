@@ -104,6 +104,11 @@ a {
   flex-shrink: 0;
 }
 
+.hello-icon--lightbulb {
+  width: auto;
+  height: 33px;
+}
+
 .hello-quote {
   font-family: var(--font-accent);
   font-style: italic;
